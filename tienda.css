@@ -1,0 +1,10 @@
+body{
+    background: url(img/marcas.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}           
+
+.icono{
+    font-size: px;
+}

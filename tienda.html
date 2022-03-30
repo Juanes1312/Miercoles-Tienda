@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="tienda.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="tienda.css">
+</head>
+<body>
+    <header>
+
+      <nav class="navbar navbar-expand-lg navbar-light animate__animated animate__backInLeft" style="background-color: darkmagenta;">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="navbar" href="index.html" style="color: white;">Relapso Tienda</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: white;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;">
+                  <i class="bi bi-cart-plus-fill icono"></i>
+                  <span class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger invisible">
+                    99+
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscador" aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      />
+
+    <div class="m-2 animate__animated animate__lightSpeedInRight">
+         <a class="btn fw-bold" style="background-color: darkmagenta; color: white; border-color: gold;" href="index.html" role="button">Regresar</a>
+    </div>
+
+    </header>
+    <main>
+        <div class="container"> <!-- div.container -->
+            <div class="row row-cols-1 row-cols-md-5 g-4" id="fila"> <!-- div.row --> <!-- row-cols-1 una columna en pqueños, row-cols-md-5 cinco columna en pc  -->
+
+            </div>
+        </div>
+        <div class="p-4">
+
+        </div>
+    </main>
+
+    <section>
+         <!-- Modal -->
+         <div class="modal fade" id="modalinfo" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Relapso Tienda</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-4">
+                          <img src="" alt="" class="w-100 img-fluid" id="fotoinfo">
+                      </div>
+                      <div class="col-8">
+                          <h4 class="text-center" id="tituloinfo"></h4>
+                          <h4 id="nombreInfo"></h4>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">cantidad</label>
+                            <input type="number" class="form-control" id="cantidadProducto">
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary" id="botonadd">Añadir al Carrito</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/controladorTienda.js" type="module"></script>
+</body>
+</html>
