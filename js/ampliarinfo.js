@@ -6,13 +6,21 @@
 
         // lleno la informacion del producto
         producto.foto=evento.target.parentElement.querySelector("img").src
-        producto.nommbre=evento.target.parentElement.querySelector("h4")
+        producto.titulo=evento.target.parentElement.querySelector("h3").textContent
+        producto.descripcion=evento.target.parentElement.querySelector("p").textContent
+        producto.precio=evento.target.parentElement.querySelector("h4").textContent
 
-        let fotoinfo=document.getElementById("fotoinfo")
-        fotoinfo.src=evento.target.parentElement.querySelector("img").src
+        let fotoInfo = document.getElementById("fotoInfo")
+        fotoInfo.src=evento.target.parentElement.querySelector("img").src
         
-        let tituloFoto =document.getElementById("nombreInfo")
-        tituloFoto.textContent=evento.target.parentElement.querySelector("h4")
+        let tituloInfo = document.getElementById("nombreInfo")
+        tituloInfo.textContent=evento.target.parentElement.querySelector("h3").textContent
+
+        let descripcionInfo = document.getElementById("descripcionInfo")
+        descripcionInfo.textContent=evento.target.parentElement.querySelector("p").textContent
+
+        let precioInfo = document.getElementById("precioInfo")
+        precioInfo.textContent=evento.target.parentElement.querySelector("h4").textContent
 
         // devolver el producto generado
         return producto
