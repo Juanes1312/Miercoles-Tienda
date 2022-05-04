@@ -131,10 +131,6 @@ botonVerCarrito.addEventListener("click",function(){
         subtotal.classList.add("text-center")
         subtotal.textContent="Subtotal: $"+producto.cantidad*producto.precio
 
-
-        // resultado = resultado + producto.cantidad*producto.precio
-
-
         //PADRES E HIJOS
         columna1.appendChild(foto)
         columna2.appendChild(titulo)
@@ -146,8 +142,24 @@ botonVerCarrito.addEventListener("click",function(){
         base.appendChild(fila)
 
     })
+
+    let total=0
+    carrito.forEach(function(producto){
+        total=total+Number(producto.cantidad*producto.precio)
+    })
+
+
     let totalCompra = document.getElementById("total")
-    totalCompra.textContent= "Total: "+producto.cantidad*producto.precio
+    totalCompra.textContent= "Total: $"+total
+
+  
+
+        let btndolar=document.getElementById("btndolar")
+        btndolar.addEventListener("click",function(){
+
+        total.textContent=total / 4000
+        
+    })
 
 
 
