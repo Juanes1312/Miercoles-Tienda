@@ -75,8 +75,8 @@ botonAgregarCarrito.addEventListener("click",function(){
     capsula.classList.remove("invisible")
 
     console.log(carrito)
-
     modalinfo.hide()
+    reiniciar()
     
 })
 
@@ -90,6 +90,7 @@ limpiar.addEventListener("click",function(){
     capsula.classList.add("invisible")
 
 })
+
 
 //rutina para ver el carrito
 let botonVerCarrito=document.getElementById("verCarrito")
@@ -143,26 +144,29 @@ botonVerCarrito.addEventListener("click",function(){
 
     })
 
+
     let total=0
     carrito.forEach(function(producto){
         total=total+Number(producto.cantidad*producto.precio)
     })
-
-
+    
+    
     let totalCompra = document.getElementById("total")
     totalCompra.textContent= "Total: $"+total
 
-  
-
-        let btndolar=document.getElementById("btndolar")
-        btndolar.addEventListener("click",function(){
-
-        total.textContent=total / 4000
-        
-    })
-
-
-
     modalcompra.show()
 
+    let btndolar=document.getElementById("btndolar")
+    btndolar.addEventListener("click",function(){
+        
+    let pesos = total
+    let dolar = pesos/4000
+    totalCompra.textContent="Total en dolares: $"+dolar.toFixed(2)
+    })
+
 })
+
+function reiniciar (){
+    let cantidadProducto = document.getElementById("cantidadProducto")
+    cantidadProducto.value="1"
+}
