@@ -1,4 +1,4 @@
-/*
+ /*
 // controlando etiquetas
 
 // crear una variable para guardar etiqueta
@@ -36,6 +36,8 @@ llenarTienda()
 //referencia al modal 
 let modalinfo = new bootstrap.Modal(document.getElementById('modalinfo'))
 let modalcompra = new bootstrap.Modal(document.getElementById('resumencompra'))
+// var myModal = new bootstrap.Modal(document.getElementById('myModal'), options)
+
 
 // rutina para ampliar informacion 
 let contenedorTienda=document.getElementById("fila")
@@ -66,7 +68,7 @@ botonAgregarCarrito.addEventListener("click",function(){
     let suma=0
     carrito.forEach(function(producto){
         suma=suma+Number(producto.cantidad)
-    })
+    })   
 
     let capsula=document.getElementById("capsula") 
     capsula.textContent=suma
@@ -117,26 +119,37 @@ botonVerCarrito.addEventListener("click",function(){
         titulo.classList.add("text-center")
         titulo.textContent=producto.titulo
 
-        let suma=document.createElement("h4")
-        suma.classList.add("text-center")
-        suma.textContent=producto.cantidad
+        let cantidad=document.createElement("h4")
+        cantidad.classList.add("text-center")
+        cantidad.textContent="Cantidad: "+producto.cantidad
 
         let precio=document.createElement("h4")
         precio.classList.add("text-center")
-        precio.textContent=producto.precio
+        precio.textContent="Precio: $"+producto.precio
 
-        // let subtotal
+        let subtotal=document.createElement("h4")
+        subtotal.classList.add("text-center")
+        subtotal.textContent="Subtotal: $"+producto.cantidad*producto.precio
+
+
+        // resultado = resultado + producto.cantidad*producto.precio
+
 
         //PADRES E HIJOS
         columna1.appendChild(foto)
         columna2.appendChild(titulo)
-        columna2.appendChild(suma)
+        columna2.appendChild(cantidad)
         columna2.appendChild(precio)
+        columna2.appendChild(subtotal)
         fila.appendChild(columna1)
         fila.appendChild(columna2)
         base.appendChild(fila)
 
     })
+    let totalCompra = document.getElementById("total")
+    totalCompra.textContent= "Total: "+producto.cantidad*producto.precio
+
+
 
     modalcompra.show()
 

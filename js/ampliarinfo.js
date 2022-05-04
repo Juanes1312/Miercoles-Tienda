@@ -1,4 +1,4 @@
-// rutina para ampliar la informacion del producto 
+// rutina para ampliar la informacion del producto-VER TODOS
 
       export  function ampliarInformacionProducto(evento){
 

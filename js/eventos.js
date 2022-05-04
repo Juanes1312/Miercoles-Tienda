@@ -8,6 +8,11 @@ function cambiarFoto(){
     titulo2.textContent="buenos dias señor"
 }*/
 
+let offcanvasElementList = [].slice.call(document.querySelectorAll('.offcanvas'))
+let offcanvasList = offcanvasElementList.map(function (offcanvasEl) {
+  return new bootstrap.Offcanvas(offcanvasEl)
+})
+
 let etiquetaTitulo=document.getElementById("imagen2")
 
 etiquetaTitulo.addEventListener("mouseover",cambiarTitulo)
@@ -25,3 +30,10 @@ function cambiar(){
     let etiquetaTitulo1=document.getElementById("titulo2")
     etiquetaTitulo1.textContent="productos"
 }
+
+let btnRegistro=document.getElementById("botonRegistro")
+btnRegistro.addEventListener("click",function(){
+
+    offcanvass.hide()
+
+})

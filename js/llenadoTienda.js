@@ -3,13 +3,13 @@ export function llenarTienda(){
 
 let productos=[
 
-    {foto: 'img/basicahombre.jpg',nombre:"Camisetas Hombre",precio:"$35000",descripcion:"Camiseta cuello rendo para hombre",},
-    {foto:'img/polohombre.jpg',nombre:"Camisetas tipo Polo Hombre",precio:"$38000",descripcion:"Camiseta tipo polo para hombre"},
-    {foto:'img/basicadama.jpg',nombre:"Camisetas Dama",precio:"$25000",descripcion:"Camiseta basica para dama"},
-    {foto:'img/jeanhombre.jpg',nombre:"Blue Jeans Hombre",precio:"$80000",descripcion:"Blue Jean bota tuvo para hombre"},
-    {foto:'img/jeandama.jpg',nombre:"Blue Jeans Dama",precio:"$70000",descripcion:"Blue Jean de dama bota campana"},
-    {foto:'img/buzohombre.jpg',nombre:"Buzos para Hombre",precio:"$50000",descripcion:"Buzos para Hombre en variedad de colores"},
-    {foto:'img/buzodama.jpg',nombre:"Buzos para Dama",precio:"$45000",descripcion:"Buzos para Dama en variedad de colores"},
+    {foto: 'img/basicahombre.jpg',nombre:"Camisetas Hombre",precio:35000,descripcion:"Camiseta cuello rendo para hombre",},
+    {foto:'img/polohombre.jpg',nombre:"Camisetas tipo Polo Hombre",precio:38000,descripcion:"Camiseta tipo polo para hombre"},
+    {foto:'img/basicadama.jpg',nombre:"Camisetas Dama",precio:25000,descripcion:"Camiseta basica para dama"},
+    {foto:'img/jeanhombre.jpg',nombre:"Blue Jeans Hombre",precio:80000,descripcion:"Blue Jean bota tuvo para hombre"},
+    {foto:'img/jeandama.jpg',nombre:"Blue Jeans Dama",precio:70000,descripcion:"Blue Jean de dama bota campana"},
+    {foto:'img/buzohombre.jpg',nombre:"Buzos para Hombre",precio:50000,descripcion:"Buzos para Hombre en variedad de colores"},
+    {foto:'img/buzodama.jpg',nombre:"Buzos para Dama",precio:45000,descripcion:"Buzos para Dama en variedad de colores"},
     {foto:'img/accesorioshombre.png',nombre:"Accesorios para Hombre",descripcion:"Accesorios variados para hombre"},
     {foto:'img/accesoriosdama.jpg',nombre:"Accesorios para Dama",descripcion:"Accesorios variados para dama"},
     {foto:'img/desc.png',nombre:"Prendas en Descuento",descripcion:"Variedad de prendas y accesorios para hombre y dama en descuento "},

@@ -25,11 +25,8 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
+                    <a class="nav-link active" aria-current="page" href="#"   type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">Registro</a>
+                  </li>           
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Dropdown
@@ -55,25 +52,37 @@
           
     </header>
 
+    <section>
+  <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-body">
+
+      <h5 id="offcanvasTopLabel">Registro</h5>
+      
+            <form  id="formularioregistro">
+
+            <div class="row justify-content-around">
+              <div class="mb-3 col-5">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" id="email">          
+              </div>
+
+              <div class="mb-3 col-5">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" id="password">
+              </div>
+            </div>
+            
+            <div class="row justify-content-center">
+              <button type="submit" class="btn btn-primary col-4" id="botonRegistro">Registrarse</button>
+            </div>
+
+            </form>
+               
+    </div>
+  </div>
+    </section>
+
     <main>
-
-      <section>
-        <form  id="formularioregistro">
-
-          <div class="mb-3">
-            <label class="form-label">Email</label>
-            <input type="email" class="form-control" id="email">
-          </div>
-
-          <div class="mb-3">
-            <label class="form-label">Password</label>
-            <input type="password" class="form-control" id="password">
-          </div>
-
-          <button type="submit" class="btn btn-primary w-100" id="botonRegistro">Registro</button>
-
-        </form>
-      </section>
 
         <img src="img/camisetas2.jpg" alt="fotobanner" class="img-fluid w-100">
 
@@ -87,7 +96,7 @@
                           e internacional con los mejores precios y los
                           últimos lanzamientos del mercado.
                         </p>
-                        <button id="btndes" class="btn animate__animated animate__lightSpeedInRight" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" style="background-color: black;color: burlywood;">
+                        <button id="btndes" class="btn animate__animated animate__lightSpeedInRight btn-outline-dark fw-bold" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                             Conocer Mas
                           </button>
 
@@ -173,12 +182,8 @@
       <div class="modal fade" id="mensajeinformativo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
             <div class="modal-body">
-              <p id="mensajemodalinfo"></p>
+              <h4 id="mensajemodalinfo"></h4>
             </div>
           </div>
         </div>

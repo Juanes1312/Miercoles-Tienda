@@ -16,7 +16,7 @@ boton.addEventListener("click",function(evento){
         // Signed in
         const user = userCredential.user;
         console.log("exitoo")
-        textoModal.textContent="exitoo"
+        textoModal.textContent="Exito al registrarse"
         modalregistro.show()
         let formulario=document.getElementById("formularioregistro")
         formulario.reset()
@@ -30,7 +30,7 @@ boton.addEventListener("click",function(evento){
         const errorMessage = error.message;
         // ..
         console.log("fallo"+errorMessage)
-        textoModal.textContent="fallamos: "+errorMessage
+        textoModal.textContent="Fallamos: "+errorMessage
         modalregistro.show()
         setTimeout(function(){
             modalregistro.hide()
